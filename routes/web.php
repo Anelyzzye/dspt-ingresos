@@ -33,3 +33,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', function(){return view('web.inicio');})->name("sitio.inicio");
 Route::get('/quienes-somos', function(){return view('web.quienes');})->name("sitio.descripcion");
 Route::get('/tramites', function(){return view('web.tramites');})->name("sitio.tramites");
+Route::get('/contacto', function(){return view('web.contacto');})->name("sitio.contacto");
+Route::get('/noticias', function(){return view('web.noticias');})->name("sitio.noticias");
