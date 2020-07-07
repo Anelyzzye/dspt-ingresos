@@ -2339,10 +2339,11 @@ pre code
 
     transition: all .2s cubic-bezier(.68, -.55, .265, 1.55); 
 
-    color: #e4eff6;
+    color: #f7f7fa;
     border: 3px solid #f5eef1;
     border-radius: .375rem;
-    background-color: #324cdd;
+    background-color: #285c4d;
+    opacity: 0.8;
     background-clip: padding-box;
     box-shadow: none;
 }

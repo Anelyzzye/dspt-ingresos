@@ -58,7 +58,7 @@
                 </div>
                 
 
-                  <button type="submit" class="bg4 tag-item hov1 m-text9 trans-0-4">Enviar</button>
+                  <button type="submit" class="flex-c-m tag-item size2 m-text2 bg3 hov1 trans-0-4">Enviar</button>
                 </div>
               </form>
 				</div>

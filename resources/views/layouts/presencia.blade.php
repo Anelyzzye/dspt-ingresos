@@ -150,7 +150,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="#">
+              <a class="nav-link nav-link-icon" href="{{route('sitio.noticias')}}">
                 
                 <span class="nav-link-inner--text">Noticias</span>
               </a>
@@ -304,7 +304,7 @@
 
 					<div class="w-size2 p-t-20">
 						<!-- Button -->
-						<input type="submit" class="bg4 tag-item hov1 m-text9 trans-0-4" target="_blank" value="Ingresar">
+						<input type="submit" class="flex-c-m tag-item size2 m-text2 bg3 hov1 trans-0-4" target="_blank" value="Ingresar">
 							
 						
 					</div>

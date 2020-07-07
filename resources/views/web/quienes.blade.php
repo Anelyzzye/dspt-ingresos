@@ -18,7 +18,7 @@
 					</span>
 
 					<div class="w-size20 w-full-sm">
-						<p class="s-text12 p-b-23">
+						<p class="s-text12 p-b-23" style="text-align: justify;">
 							Promover el de desarrollo, mejora del medio ambiente, calidad de servicios públicos, y de salud en la comunidad.
 						</p>
 				</div>
@@ -31,7 +31,7 @@
 					</span>
 
 					<div class="w-size20 w-full-sm">
-						<p class="s-text12 p-b-23">
+						<p class="s-text12 p-b-23" style="text-align: justify;">
 							Mantener una seguridad pública, promover la cultura, solidaria, y competitiva con los habitantes de la comunidad. 
 						</p>
 				</div>
@@ -55,13 +55,13 @@
 						Juan Abad Morales
 					</h3>
 
-					<p class="p-b-28">
+					<p class="p-b-28" style="text-align: justify;">
 						Primer Delegado Municipal de la Delegación San Pedro Totoltepec, comprometido con la comunidad, promovedor de actividades
 						culturales, campañas de salud, siempre al pendiente de gestionar apoyos sociales en beneficio de la comunidad.
 					</p>
 
 					<div class="bo13 p-l-29 m-l-9 p-b-10">
-						<p class="p-b-11">
+						<p class="p-b-11" style="text-align: justify;">
 							Debemos usar el tiempo sabiamente y darnos cuenta de que siempre es el momento oportuno para hacer las cosas bien
 						</p>
 
@@ -89,12 +89,12 @@
 						Roberto Flores
 					</h3>
 
-					<p class="p-b-28">
+					<p class="p-b-28" style="text-align: justify;">
 						Segundo Delegado Municipal de la Delegación San Pedro Totoltepec, comprometido con el mejoramiento urbano, limpieza de la comunidad y seguridad pública. 
 						Apoyo y trabajo arduo en las faenas, mantenimiento de la explanada (kiosko), panteón municipal. 
 					</p>
 
-					<div class="bo13 p-l-29 m-l-9 p-b-10">
+					<div class="bo13 p-l-29 m-l-9 p-b-10" style="text-align: justify;">
 						<p class="p-b-11">
 							El que nunca ha aprendido a obedecer no puede ser un buen comandante 
 						</p>
@@ -122,14 +122,14 @@
 						Angel Díaz
 					</h3>
 
-					<p class="p-b-28">
+					<p class="p-b-28" style="text-align: justify;">
 						Tercer Delegado Municipal de la Delegación San Pedro Totoltepec, 
 						dedicado e involucrado en las actividades y obras públicas a la comunidad. 
 						Trabajando constantemente por tener una comunidad digna, limpia.
 					</p>
 
 					<div class="bo13 p-l-29 m-l-9 p-b-10">
-						<p class="p-b-11">
+						<p class="p-b-11" style="text-align: justify;">
 							Cuanto mayor es el esfuerzo, mayor es la gloria
 						</p>
 

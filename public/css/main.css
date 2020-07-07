@@ -1,3 +1,4 @@
+
 /*------------------------------------------------------------------
 Project:  
 Version:  
@@ -2123,18 +2124,20 @@ li.sale-noti > a {
 
 .tag-item {
   display: block;
-  font-family: Montserrat-Regular;
+  font-family: 'Poppins', sans-serif;
   font-size: 13px;
   color: #888888;
   line-height: 1.5;
   padding: 5px 15px;
   border: 1px solid #cccccc;
-  border-radius: 15px;
+  border-radius: 20px;
   margin: 3px;
 }
 
 .tag-item:hover {
-  border: 1px solid #e65540;
+  border: 1px solid #9d2449;
+  font-family: 'Poppins', sans-serif;
+  background-color: #9d2449;
 }
 
 

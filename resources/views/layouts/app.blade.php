@@ -18,10 +18,97 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/presencia/logovector.png') }}" rel="icon" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/themify-icons.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/util.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/slick.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/animate.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.min.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="{{ asset('css/nucleo.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+    <link type="text/css" href="{{ asset('css/argon.css') }}" rel="stylesheet">
+    <style>
+    .imgn{
+            width: 120px;
+            height: 120px;
+        }
+    .select-css {
+    display: block;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+    color: #444;
+    line-height: 1.3;
+    padding: .4em 1.4em .3em .8em;
+    width: 400px;
+    max-width: 100%; 
+    box-sizing: border-box;
+    margin: 0;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
+    border-radius: .3em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+}
+.select-css::-ms-expand {
+    display: none;
+}
+.select-css:hover {
+    border-color: #888;
+}
+.select-css:focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222; 
+    outline: none;
+}
+.select-css option {
+    font-weight:normal;
+}
+    .navbar-search-dark .form-control {
+      color: black;
+    }
+      .bg-gradient-primary{
+     background-image: url("{{ asset('assets/img/theme/sitio.png') }}");
+     background-repeat: no-repeat;
+     background-size: cover;
+    }
+    .bg-secondary{
+      background-image: url("{{ asset('assets/presencia/head.jpg') }}");
+     background-repeat: no-repeat;
+     background-size: cover;
+    }
+    .bg-title-page{
+        background-image: url("{{ asset('assets/presencia/nav.jpg') }}");
+     background-repeat: no-repeat;
+     background-size: cover;
+    }
+    .bg-footer{
+    background-image: url("{{ asset('assets/presencia/footer.jpg') }}");
+     background-repeat: no-repeat;
+     background-size: cover;
+    }
+      .bg-tram{
+    background-image: url("{{ asset('assets/img/theme/home2.png') }}");
+     background-repeat: no-repeat;
+     background-size: cover;
+    }
+     </style>
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm bg-secondary">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -41,11 +128,11 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Inicio de sesión') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Registro') }}</a>
                                 </li>
                             @endif
                         @else
@@ -58,7 +145,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Cerrar sesión') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

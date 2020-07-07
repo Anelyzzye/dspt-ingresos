@@ -11,19 +11,19 @@
 				</div>	
 	
 	<div class="w-size20 w-full-sm">
-						<p class="s-text12 p-b-23">
+						<p class="s-text12 p-b-23" style="text-align: justify;">
 							En este apartado podrás conocer, cuáles son los trámites que puedes realizar en la Delegación de San Pedro Totoltepec, así como acceder a la sección para agendar una cita, recuerda que por motivos de salud el horario es restringido
 						</p>
-						<p>
+						<p style="text-align: justify;">
 							Es importante revisar la documentación solicida en la parte de abajo de esta misma sección, una vez revisa la información, le solicitamos crear una cuenta de acceso al sistema de citas <strong>*Clic en Nuevo*</strong>, si ya has realizado tu cuenta <strong>*Clic en Crear*</strong> <br>
 							<center>
 		<div class="w-size7 p-t-30 p-l-15 p-r-15 respon4">
 				 <a href="{{ route('register')}}">
-				<button class="  bg4 tag-item hov1 m-text9 trans-0-4" target="_blank">Nuevo
+				<button class="bg4 tag-item hov1 m-text9 trans-0-4" target="_blank">Nuevo
 				</button></a>
 
 				<a href="{{ route('login')}}">
-				<button class="  bg4 tag-item hov1 m-text9 trans-0-4" target="_blank"> &nbsp;Crear&nbsp;
+				<button class="bg4 tag-item hov1 m-text9 trans-0-4" target="_blank"> &nbsp;Crear&nbsp;
 				</button></a>	
 		</center>
 						</p>
