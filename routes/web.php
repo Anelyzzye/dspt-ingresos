@@ -35,3 +35,6 @@ Route::get('/quienes-somos', function(){return view('web.quienes');})->name("sit
 Route::get('/tramites', function(){return view('web.tramites');})->name("sitio.tramites");
 Route::get('/contacto', function(){return view('web.contacto');})->name("sitio.contacto");
 Route::get('/noticias', function(){return view('web.noticias');})->name("sitio.noticias");
+
+//Intranet Administrativo
+Route::post('/acceso', 'AceesoController@index')->name("admin.acceso");

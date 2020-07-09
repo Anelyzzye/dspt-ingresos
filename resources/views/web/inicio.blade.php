@@ -7,7 +7,7 @@
 				
 				<div class="col-sm-10 col-md-8 col-lg-6 m-l-r-auto">
 
-	<h1>Avisos a la comunidad de San Pedro Tototepec</h1>
+	<h1 class="m-text20">Avisos a la comunidad de San Pedro Tototepec</h1>
 				
 					<!-- block1 -->
 					<div class="block1 hov-img-zoom pos-relative m-b-30">

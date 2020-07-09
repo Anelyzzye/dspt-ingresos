@@ -16442,7 +16442,8 @@ a.text-pink:focus
 
 .text-red
 {
-    color: #f5365c !important;
+    color: #4e232e !important;
+    font-size: 20px;
 }
 
 a.text-red:hover,
@@ -16464,7 +16465,7 @@ a.text-orange:focus
 
 .text-yellow
 {
-    color: #ffd600 !important;
+    color: #d4c19c !important;
 }
 
 a.text-yellow:hover,
@@ -16475,7 +16476,9 @@ a.text-yellow:focus
 
 .text-green
 {
-    color: #2dce89 !important;
+    color: #285d4c !important;
+    text-align: center;
+    font-size: 16px;
 }
 
 a.text-green:hover,

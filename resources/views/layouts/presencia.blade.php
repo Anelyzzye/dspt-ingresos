@@ -19,8 +19,10 @@
 	<link href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
 	<link href="{{ asset('assets/vendor/@fortawesome/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
 	<link type="text/css" href="{{ asset('css/argon.css') }}" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Lora:wght@500&display=swap" rel="stylesheet"> 
 	<style>
-  	.imgn{
+
+	 	.imgn{
 			width: 120px;
 			height: 120px;
 		}
@@ -178,17 +180,18 @@
 				<h4 class="s-text9 p-b-30">
 					<img class="imgn" src="{{ asset('assets/presencia/fb.png') }}" />
 				</h4>
-				<li class="p-b-12">
-						<a href="#" class="s-text9">
+				<li class="p-b-12 s-text9">
+						
 							Facebook
-						</a>
+							<a href="https://www.facebook.com/San-Pedro-TotoltepecDelegaci%C3%B3n-2019-2021-Unidad-y-transformaci%C3%B3n-343511072928129/" >Siguenos</a>
+						
 					</li>
 					
 				</h4> 
 	<div>
 					<p class="s-text9 w-size27">
-						<i class="ni ni-active-40"></i>
-						<a href="https://www.facebook.com/San-Pedro-TotoltepecDelegaci%C3%B3n-2019-2021-Unidad-y-transformaci%C3%B3n-343511072928129/" >Siguenos</a>
+						
+						
 					</p>
 
 					
@@ -201,38 +204,32 @@
 				</h4>
 
 				<ul>
-					<li class="p-b-9">
-						<a href="#" class="s-text9">
+					<li class="p-b-9 s-text9">
 							Primer Delegado
-						</a>
+						
 					</li>
 
-					<li class="p-b-9">
-						<a href="#" class="s-text9">
+					<li class="p-b-9 s-text9">
 							Segundo delegado
 						</a>
 					</li>
 
-					<li class="p-b-9">
-						<a href="#" class="s-text9">
+					<li class="p-b-9 s-text9">
 							Tercer Delegado
 						</a>
 					</li>
 
-					<li class="p-b-9">
-						<a href="#" class="s-text9">
+					<li class="p-b-9 s-text9">
 							Primer suplente
 						</a>
 					</li>
 
-					<li class="p-b-9">
-						<a href="#" class="s-text9">
+					<li class="p-b-9 s-text9">
 							Segundo suplente
 						</a>
 					</li>
 
-					<li class="p-b-9">
-						<a href="#" class="s-text9">
+					<li class="p-b-9 s-text9">
 							Tercer suplente
 						</a>
 					</li>
@@ -245,38 +242,32 @@
 				</h4>
 
 				<ul>
-					<li class="p-b-9">
-						<a href="#" class="s-text9">
+					<li class="p-b-9 s-text9">
 							Juan Abad Morales
 						</a>
 					</li>
 
-					<li class="p-b-9">
-						<a href="#" class="s-text9">
+					<li class="p-b-9 s-text9">
 							Roberto Flores
 						</a>
 					</li>
 
-					<li class="p-b-9">
-						<a href="#" class="s-text9">
+					<li class="p-b-9 s-text9">
 							Angel Díaz
 						</a>
 					</li>
 
-					<li class="p-b-9">
-						<a href="#" class="s-text9">
+					<li class="p-b-9 s-text9">
 							Grisela Bernal
 						</a>
 					</li>
 
-					<li class="p-b-9">
-						<a href="#" class="s-text9">
+					<li class="p-b-9 s-text9">
 							Mónica Andres
 						</a>
 					</li>
 
-					<li class="p-b-9">
-						<a href="#" class="s-text9">
+					<li class="p-b-9 s-text9">
 							Martha Flores
 						</a>
 					</li>
@@ -291,7 +282,7 @@
 				<h4 class="s-text12 p-b-30">
 					Acceso administrativo
 				</h4>
-			<form action="#" method="POST">
+			<form action="{{ route('admin.acceso') }}" method="POST">
 					@csrf
 					<div class="effect1 w-size9">
 						<input class="s-text7 bg6 w-full p-b-5 form-control" type="text" name="email" placeholder="email@example.com">

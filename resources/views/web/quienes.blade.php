@@ -13,12 +13,12 @@
 		<ul>
 					<li>
 						<div class="flex-w p-l-15 p-r-15">
-					<span class="s-text18 w-size19 w-full-sm">
+					<span class="m-text17 w-size19 w-full-sm">
 						Misión:
 					</span>
 
 					<div class="w-size20 w-full-sm">
-						<p class="s-text12 p-b-23" style="text-align: justify;">
+						<p class="s-text16 p-b-23" style="text-align: justify;">
 							Promover el de desarrollo, mejora del medio ambiente, calidad de servicios públicos, y de salud en la comunidad.
 						</p>
 				</div>
@@ -26,12 +26,12 @@
 
 				 <li>
 				 	<div class="flex-w p-l-15 p-r-15">
-					<span class="s-text18 w-size19 w-full-sm">
+					<span class="m-text17 w-size19 w-full-sm">
 						Visión:
 					</span>
 
 					<div class="w-size20 w-full-sm">
-						<p class="s-text12 p-b-23" style="text-align: justify;">
+						<p class="s-text16 p-b-23" style="text-align: justify;">
 							Mantener una seguridad pública, promover la cultura, solidaria, y competitiva con los habitantes de la comunidad. 
 						</p>
 				</div>
