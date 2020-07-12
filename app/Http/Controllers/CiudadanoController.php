@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Ciudadano;
 use Illuminate\Http\Request;
-use App\Ciudadano;
+use App\Http\Requests\CiudadanoStoreRequest;
+use App\Http\Requests\CiudadanoUpdateRequest;
 
 class CiudadanoController extends Controller
 {
@@ -13,43 +14,14 @@ class CiudadanoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $email = $request->input('email');
-        $pass = $request->input('password');
-
-        $consulta = Ciudadano::where('email', '=', $email)
-            ->where('password', '=',$pass)
-            ->get();
-
-        //echo $consulta->count();
-
-        if($consulta->count() == 0){
-            return redirect()->route('sitio.tramites');
-         }else{
-            
-            $request->session()->put('session_id',$consulta[0]->id);
-            $request->session()->put('session_name',$consulta[0]->nombres);
-            $request->session()->put('session_tipo',$consulta[0]->tipociudadanos_id);
-
-            $session_id = $request->session()->get('session_id');
-            $session_name = $request->session()->get('session_name');
-            $session_tipo = $request->session()->get('session_tipo');
-
-
-            if ($session_tipo == '3') {
-                return "Bienvenido al sistema"
-                /*redirect()->route('cita.show');*/
-            }
-            else if($session_tipo == '2'){
-                return view('sitio.tramites');
-            }
-            else{
-                echo
-                return back();
-            }
-            
-        }
+        $admin = $request['admin'];
+        $ciudadano = Ciudadano::select(['id','nombres','apellidopat','apellidomat','email'])
+                ->where('nombres', 'LIKE', '%'.$admin.'%')
+                ->orderBy('updated_at', 'DESC')
+                ->paginate(5);
+        return view('admin.consultarusuario',['admin' => $admin] ,compact('ciudadano')); 
     }
 
     /**
@@ -59,7 +31,7 @@ class CiudadanoController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.altaciudadano');
     }
 
     /**
@@ -68,9 +40,19 @@ class CiudadanoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(CiudadanoStoreRequest $request)
     {
-        //
+        $ciudadano = new Ciudadano();
+        $ciudadano->nombres = $request->input("nombres");
+        $ciudadano->apellidopat = $request->input("apellidopat");
+        $ciudadano->apellidomat = $request->input("apellidomat");
+        $ciudadano->email = $request->input("email");
+        $ciudadano->password = $request->input("password");
+        $ciudadano->tipociudadanos_id = $request->input("tipociudadanos_id");
+        $ciudadano->created_at = now()->toDateString();
+        $ciudadano->updated_at = now()->toDateString();
+        $ciudadano->save();
+        return redirect()->route("ciudadano.index");
     }
 
     /**
@@ -81,7 +63,7 @@ class CiudadanoController extends Controller
      */
     public function show(Ciudadano $ciudadano)
     {
-        //
+     //  
     }
 
     /**
@@ -90,9 +72,10 @@ class CiudadanoController extends Controller
      * @param  \App\Ciudadano  $ciudadano
      * @return \Illuminate\Http\Response
      */
-    public function edit(Ciudadano $ciudadano)
+    public function edit($id)
     {
-        //
+        $ciudadanos = Ciudadano::findOrFail($id);
+        return view('admin.editarciudadano', compact("ciudadanos"));
     }
 
     /**
@@ -102,9 +85,19 @@ class CiudadanoController extends Controller
      * @param  \App\Ciudadano  $ciudadano
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Ciudadano $ciudadano)
+    public function update(CiudadanoUpdateRequest $request, $id)
     {
-        //
+        $ciudadano = Ciudadano::find($id);
+        $ciudadano->nombres = $request->input("nombres");
+        $ciudadano->apellidopat = $request->input("apellidopat");
+        $ciudadano->apellidomat = $request->input("apellidomat");
+        $ciudadano->email = $request->input("email");
+        $ciudadano->password = $request->input("password");
+        $ciudadano->tipociudadanos_id = $request->input("tipociudadanos_id");
+        $ciudadano->created_at = now()->toDateString();
+        $ciudadano->updated_at = now()->toDateString();
+        $ciudadano->save();
+        return redirect()->route("ciudadano.index");
     }
 
     /**

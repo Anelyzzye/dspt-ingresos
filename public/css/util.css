@@ -3052,16 +3052,21 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 }
 
 .s-text6 {
-	font-family: 'Lora', serif;
-	font-size: 13px;
-	color: #999999;
-	line-height: 1.8;
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	color: black;
+	line-height: 2.1;
+	border-radius: 10px;
+	width: 100%;
+	height: auto;
+	padding: 1px;
+		opacity: 0.8;
 }
 
 .s-text7 {
 	font-family: 'Lora', serif;
 	font-size: 13px;
-	color: #555555;
+	color: black;
 	line-height: 1.8;
 }
 
@@ -3186,15 +3191,26 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 
 .m-text2 {
 	font-family: 'Lora', serif;
-	font-size: 16px;
-	color: #333333;
+	font-size: 18px;
+	 background-color: #621132;
+  	color: black;
 	text-transform: uppercase;
+	margin: 3px;
+}
+.m-text22 {
+	font-family: 'Lora', serif;
+	font-size: 18px;
+	 background-color: #621132;
+  	color: white;
+	text-transform: uppercase;
+	margin: 3px;
 }
 
 .m-text3 {
 	font-family: 'Lora', serif;
-	font-size: 16px;
+	font-size: 18px;
 	color: white;
+	background-color: #285c4d;
 	text-transform: uppercase;
 }
 
@@ -3296,15 +3312,16 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 .m-text17 {
 	font-family: 'Lora', serif;
 	font-size: 20px;
-	color: #555555;
+	color: #333333;
 	line-height: 1.2;
 }
 
 .m-text18 {
 	font-family: 'Lora', serif;
-	font-size: 16px;
-	color: #666666;
-	line-height: 1.2;
+	font-size: 20px;
+	color: #333333;
+	line-height: 1.5;
+	padding: 2px;
 }
 
 .m-text19 {
@@ -3464,8 +3481,8 @@ SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
 }
 
 .size3 {
-	width: 60px;
-	height: 60px;
+	width: 60%;
+	height: 40px;
 }
 
 .size4 {
@@ -3715,7 +3732,7 @@ SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE SHAPE
 .bg5 {background-color: #f2f2f2;}
 .bg6 {background-color: #f0f0f0;}
 .bg7 {background-color: #333333;}
-.bg8 {background-color: #e6e6e6;}
+.bg8 {background-color: #285c4d;}
 
 .bg-img1 {
 	background-repeat: no-repeat;
@@ -3968,12 +3985,12 @@ EFFECT   EFFECT   EFFECT   EFFECT   EFFECT   EFFECT  EFFECT
 }
 
 .hov2:hover {
-	color: white;
-	text-decoration: underline;
+	color: black;
 }
 
 .hov3:hover {
-	color: #333333;
+	color: #b38e5d;
+	background-color: white;
 }
 
 .hov4:hover {

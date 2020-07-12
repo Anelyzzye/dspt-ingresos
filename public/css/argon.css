@@ -8032,8 +8032,10 @@ button.bg-dark:focus
 
 .bg-default
 {
-    background-color: #172b4d !important;
+    background-color: #9d2449 !important;
+    opacity: 0.9;
 }
+
 
 a.bg-default:hover,
 a.bg-default:focus,
@@ -9663,7 +9665,7 @@ button.bg-darker:focus
 .mb-4,
 .my-4
 {
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 1.8rem !important;
 }
 
 .ml-4,
@@ -14700,6 +14702,7 @@ a.text-darker:focus
 .text-muted
 {
     color: #16100f !important;
+    font-size: 22px;
 }
 
 .text-black-50
@@ -16329,6 +16332,7 @@ button.section-darker:focus
 .text-lg
 {
     font-size: 1.25rem !important;
+    color: white;
 }
 
 .text-xl
@@ -16443,7 +16447,7 @@ a.text-pink:focus
 .text-red
 {
     color: #4e232e !important;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 a.text-red:hover,
@@ -20904,8 +20908,9 @@ textarea[resize='horizontal']
 
 .table .thead-dark th
 {
-    color: #4d7bca; 
-    background-color: #1c345d;
+    color: #d4c19c; 
+    font-size: 15px;
+    background-color: #4e232e;
 }
 
 .table .thead-light th

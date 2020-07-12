@@ -33,13 +33,8 @@
    .navbar-search-dark .form-control {
       color: black;
     }
-      .bg-gradient-primary{
-     background-image: url("{{ asset('assets/img/theme/sitio.png') }}");
-     background-repeat: no-repeat;
-     background-size: cover;
-    }
     .bg-secondary{
-      background-image: url("{{ asset('assets/img/theme/copia.png') }}");
+      background-image: url("{{ asset('assets/presencia/form.jpg') }}");
      background-repeat: no-repeat;
      background-size: cover;
     }
@@ -53,11 +48,7 @@
      background-repeat: no-repeat;
      background-size: cover;
     }
-      .bg-tram{
-    background-image: url("{{ asset('assets/img/theme/home2.png') }}");
-     background-repeat: no-repeat;
-     background-size: cover;
-    }
+    
   </style>
 </head>
 
@@ -210,17 +201,17 @@
       
         <ul class="navbar-nav mb-md-3">
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{ route('ciudadano.create') }}">
               <i class="text-green">Usuarios</i> 
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{ route('donacion.create')}}">
               <i class="text-green">Donacion</i> 
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{ route('tramites.create')}}">
               <i class="text-green">Trámite</i> 
             </a>
           </li>
@@ -267,30 +258,20 @@
               <div class=" dropdown-header noti-title">
                
               </div>
-              <a href="#" class="dropdown-item">
+              <a href="{{ route('ciudadano.index')}}" class="dropdown-item">
                 
-                <span>Panel tipo ciudadano</span>
+                <span>Administrativos</span>
               </a>
-              <a href="#" class="dropdown-item">
-                
-                <span>Panel trámites</span>
+
+              <a href="{{ route('donacion.index')}}" class="dropdown-item">
+                <span>Porcentaje donaciones</span>
               </a>
-               <a href="#" class="dropdown-item">
-               
-                <span>Panel Citas</span>
+
+              <a href="{{ route('tramites.index')}}" class="dropdown-item">
+               <span>Trámites</span>
               </a>
-              <a href="#" class="dropdown-item">
-                
-                <span>Panel tipo donación</span>
-              </a>
-              <a href="#" class="dropdown-item">
-               
-                <span>Panel Avisos</span>
-              </a>
-              <a href="#" class="dropdown-item">
-               
-                <span>Panel Eventos</span>
-              </a>
+
+             
 
 
 
