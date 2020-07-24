@@ -15,24 +15,23 @@
 						</div>		
 
 
-					
+					@foreach($noticias as $even)
 						<div class="item-blog p-b-80">
 							<a href="#" class="item-blog-img pos-relative dis-block hov-img-zoom">
-								<img src="{{ asset('assets/presencia/logovector.png') }}">
+								<img src="{{asset('imagesEvento/'.$even->evento_image) }}">
 
 								<span class="item-blog-date dis-block flex-c-m pos1 size17 bg4 s-text1">
-									2020
+									{{$even->evento_fecha}}
 								</span>
 							</a>
 
 							<div class="item-blog-txt p-t-33">
 								<h4 class="p-b-11">
 									
-										Titulo principal
-									
+{{$even->evento_titulo}}									
 								</h4>
 
-								<a href="#" class="s-text20">
+								<a href="{{ route('eventos.show', $even->id )}}" class="s-text20">
 									Leer más 
 								</a><br>
 								<div class="filter-color p-t-22 p-b-50 bo3">
@@ -52,10 +51,10 @@
 									<label class="color-filter color-filter5" for="color-filter5"></label>
 								</li>
 							</ul>
-	
+	@endforeach
 
 								<center>
-									
+									{{ $noticias->render()}}
 								</center>
 							</div>
 						</div>

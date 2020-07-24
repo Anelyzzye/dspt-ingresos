@@ -170,12 +170,12 @@
           </summary><br>
           <ul class="navbar-nav mb-md-3">
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{ route('avisos.create') }}">
               <i class="text-green">Sección avisos</i> 
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="{{ route('eventos.create') }}">
               <i class="text-green">Sección noticias</i> 
             </a>
           </li>
@@ -270,7 +270,12 @@
               <a href="{{ route('tramites.index')}}" class="dropdown-item">
                <span>Trámites</span>
               </a>
-
+              <a href="{{ route('avisos.index')}}" class="dropdown-item">
+               <span>Avisos</span>
+              </a>
+              <a href="{{ route('eventos.index')}}" class="dropdown-item">
+               <span>Noticias</span>
+              </a>
              
 
 

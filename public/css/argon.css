@@ -336,17 +336,21 @@ button:focus
     outline: 5px auto -webkit-focus-ring-color;
 }
 
-input,
-button,
-select,
-optgroup,
-textarea
-{
-    font-family: 'Poppins', sans-serif;
-    font-size: inherit;
-    line-height: inherit; 
 
-    margin: 0;
+.textarea
+{
+    font-size: 1rem;
+    line-height: 1.5;
+    display: block;
+    width: 100%;
+    color: #f7f7fa;
+    border: 3px solid #f5eef1;
+    border-radius: .375rem;
+    background-color: #285c4d;
+    opacity: 0.8;
+    background-clip: padding-box;
+    box-shadow: none;
+}
 }
 
 button,
@@ -394,12 +398,7 @@ input[type='month']
     -webkit-appearance: listbox;
 }
 
-textarea
-{
-    overflow: auto;
 
-    resize: vertical;
-}
 
 fieldset
 {
@@ -2482,9 +2481,7 @@ select.form-control[multiple]
     height: auto;
 }
 
-textarea.form-control
-{
-    height: auto;
+
 }
 
 .form-group

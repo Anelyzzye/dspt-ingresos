@@ -128,7 +128,7 @@
           <!-- Navbar items -->
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="{{ route('sitio.inicio')}}">
+              <a class="nav-link nav-link-icon" href="{{ route('avisos.publicado')}}">
                 
                 <span class="nav-link-inner--text">Inicio</span>
               </a>
@@ -152,7 +152,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="{{route('sitio.noticias')}}">
+              <a class="nav-link nav-link-icon" href="{{route('eventos.publicado')}}">
                 
                 <span class="nav-link-inner--text">Noticias</span>
               </a>

@@ -3213,6 +3213,13 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 	background-color: #285c4d;
 	text-transform: uppercase;
 }
+.m-text33 {
+	font-family: 'Lora', serif;
+	font-size: 18px;
+	color: white;
+	background-color: #56242a;
+	text-transform: uppercase;
+}
 
 .m-text4 {
 	font-family: Montserrat-Medium;
