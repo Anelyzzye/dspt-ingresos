@@ -27,7 +27,7 @@
                         2.- Contar con IFE/INE actualizada, de lo contrario, acudir con con curp y comprobante de domicilio no mayor a 3 meses. 
                         <br>
                         <center>
-                            <a href="#">
+                            <a href="{{ route('cita.create')}}">
                             <button class="flex-c-m tag-item size2 m-text2 bg3 hov1 trans-0-4" type="button">
      Agendar cita</a>
 </button>

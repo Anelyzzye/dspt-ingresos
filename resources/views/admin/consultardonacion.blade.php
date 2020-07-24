@@ -16,14 +16,14 @@
 
 		<div><br></div>
         <div class="col">
-          <div class="card bg-default shadow"><h3 class="text-white fs-33 mb-0">Registros de porcentaje donacion</h3>
+          <div class="card bg-default shadow"><h3 class="text-white fs-33 mb-0">Registros Trámites con descuento</h3>
             
               <div class="table-responsive">
               <table class="table align-items-center table-flush">
                 <thead class="thead-dark">
                   <tr>
                     <th scope="col">Programa / Beneficio</th>
-                    <th scope="col">Porcentaje</th>
+                    <th scope="col">Pago</th>
                     <th scope="col">Actualizar</th>                                  
                   </tr>
                 </thead> 

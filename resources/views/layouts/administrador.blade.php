@@ -207,12 +207,12 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('donacion.create')}}">
-              <i class="text-green">Donacion</i> 
+              <i class="text-green">Trámites con donaciones</i> 
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('tramites.create')}}">
-              <i class="text-green">Trámite</i> 
+              <i class="text-green">Costo trámites al público</i> 
             </a>
           </li>
 
@@ -264,11 +264,11 @@
               </a>
 
               <a href="{{ route('donacion.index')}}" class="dropdown-item">
-                <span>Porcentaje donaciones</span>
+                <span>Trámites con donaciones</span>
               </a>
 
               <a href="{{ route('tramites.index')}}" class="dropdown-item">
-               <span>Trámites</span>
+               <span>Trámites  - Costo al público</span>
               </a>
               <a href="{{ route('avisos.index')}}" class="dropdown-item">
                <span>Avisos</span>

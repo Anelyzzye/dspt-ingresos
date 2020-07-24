@@ -17,7 +17,7 @@
 		</div>
 		
 		<div class="col-lg-6">
-		<h6 class="m-text18">Porcentaje de descuento:</h6>
+		<h6 class="m-text18">Costo *aplicado descuento</h6>
 		<input type="text" name="porcentaje" class="bg8 s-text6"><br>
 		@if($errors->any())
 				<div class="alert-danger mb-4">

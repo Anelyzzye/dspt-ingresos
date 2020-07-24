@@ -78,3 +78,10 @@ Route::get('/eventos/{id}', 'EventoController@show')->name("eventos.show");
 Route::get('/eventos/{id}/edit', 'EventoController@edit')->name("eventos.edit");
 Route::patch('/eventos/{id}', 'EventoController@update')->name("eventos.update");
 Route::delete('/eventos/{id}','EventoController@destroy')->name("eventos.delete");
+
+//CRUD Citas
+Route::get('/cita/all', 'CitaController@index')->name("cita.index");
+Route::get('/cita/create', 'CitaController@create')->name("cita.create");
+Route::post('/cita', 'CitaController@store')->name("cita.store");
+Route::get('/cita/{id}/edit', 'CitaController@edit')->name("cita.edit");
+Route::patch('/cita/{id}', 'CitaController@update')->name("cita.update");
